@@ -1,0 +1,11 @@
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu" yPosition="below" xPosition="after" [overlapTrigger]="false">
+  <button routerLink="/pie" mat-menu-item>Pie Chart</button>
+  <button routerLink="/bar" mat-menu-item>Bar Chart</button>
+  <button routerLink="/multicolor" mat-menu-item>Multicolor Bar Chart</button>
+</mat-menu>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+
+

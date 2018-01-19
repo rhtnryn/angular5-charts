@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-12 col-md-6">
+    <canvas width="100%" height="100%" #graph></canvas>
+  </div>
+  <div class="col-12 col-md-6">
+    <h1 class="display-5">Monthly Revenue Bar Chart</h1>
+    <div class="row">
+      <div class="col">Month</div>
+      <div class="col">Company One</div>
+    </div>
+    <div class="row" *ngFor="let month of months; let i = index;">
+      <div class="col">{{month}}</div>
+      <div class="col"><input [(ngModel)]="companyOne[i]" (ngModelChange)="generateGraph()" type="number" class="form-control"/></div>
+    </div>
+  </div>
+</div>
+  
